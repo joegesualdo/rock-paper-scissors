@@ -1,5 +1,5 @@
 ## Rock Paper Scissors
-> Play Rock, Paper, Scissors in the browser 
+> Play Rock, Paper, Scissors on the command line
 
 ## Usage 
 ```
