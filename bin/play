@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby -w
+
+# require_relative "../classes/rps_player.rb"
+require_relative "./../classes/rps_game.rb"
+
+puts "What's your name: "
+print "> "
+name = STDIN.gets.chomp
+joe = RpsPlayer.new(name)
+
+game = RpsGame.new(ARGV[0], joe)
+
+(1..ARGV[1].to_i).each do |i|
+  puts "Type 'rock', 'paper' or 'scissors': "
+  print "> "
+  move = STDIN.gets.chomp
+  game.make_move(move)
+  puts ""
+end
